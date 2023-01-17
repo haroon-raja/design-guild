@@ -1,0 +1,88 @@
+@use '../utils' as *;
+.form {
+  @include flex-column;
+  gap: rem(24);
+
+  @include breakpoint-mobile(medium) {
+    flex-direction: row;
+    gap: rem(10);
+  }
+
+  &__group {
+    &-input {
+      @include flex-column;
+      gap: rem(8);
+      position: relative;
+    }
+
+    &-forgot-pass {
+      align-self: end;
+    }
+
+    &-btn {
+      & button {
+        @include breakpoint-mobile(medium) {
+          padding: rem(20) rem(50);
+        }
+      }
+      @include breakpoint-mobile(medium) {
+        align-self: center;
+      }
+    }
+  }
+
+  &__label {
+    font-size: rem(16);
+    font-weight: $semi-bold;
+    line-height: rem(16);
+    align-self: start;
+    color: $primary;
+  }
+
+  &__input {
+    padding: rem(16);
+    border: 1px solid $slightly-orange;
+    border-radius: rem(8);
+    font-family: inherit;
+    line-height: rem(24);
+    font-size: rem(20);
+    &::-webkit-input-placeholder {
+      color: $primary;
+    }
+
+    @include breakpoint-mobile(medium) {
+      width: 100%;
+    }
+
+    &--phone {
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        appearance: none;
+      }
+    }
+
+    &[type='number'] {
+      appearance: textfield;
+    }
+
+    &--password {
+      &-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: rem(16);
+        cursor: pointer;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__forgot-pass {
+    &:link,
+    &:visited {
+      border-bottom: 1px solid currentColor;
+      color: $primary;
+      padding-bottom: 1px;
+    }
+  }
+}

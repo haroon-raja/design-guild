@@ -1,0 +1,64 @@
+@use '../utils/' as *;
+.recent__logins {
+  &-welcome {
+    font-size: rem(48);
+    font-weight: $semi-bold;
+    font-family: $font-display-1;
+  }
+
+  &-text {
+    font-size: rem(20);
+    font-weight: $light;
+    font-family: $font-display-1;
+  }
+
+  &-recent {
+    font-size: rem(18);
+    font-family: $font-display-1;
+  }
+
+  &-cards {
+    display: flex;
+    gap: rem(10);
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      gap: rem(16);
+      align-items: center;
+      &:link,
+      &:visited {
+        font-size: rem(14);
+        color: $primary;
+        font-weight: $bold;
+        font-family: $font-display-2;
+      }
+    }
+
+    &-icon {
+      &-bg {
+        width: rem(80);
+        height: rem(80);
+        background-color: $light-grayish-orange-3;
+        border-radius: 50%;
+        @include flex-center;
+      }
+    }
+
+    &--card {
+      border: 1px solid $slightly-orange;
+      padding-block: rem(24);
+      text-align: center;
+      border-radius: rem(16);
+      width: rem(150);
+
+      &-3 {
+        background-color: $light-grayish-orange-1;
+      }
+    }
+  }
+
+  @include breakpoint-desktop(medium) {
+    display: none;
+  }
+}

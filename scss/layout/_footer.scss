@@ -1,0 +1,46 @@
+@use '../utils/' as *;
+.footer {
+  @include breakpoint-mobile(medium) {
+    background-image: linear-gradient(to right, $secondary, $tertiary);
+  }
+  &__content {
+    padding-bottom: rem(50);
+    @include flex-column;
+    gap: rem(10);
+    font-family: $font-display-3;
+    font-weight: $medium;
+
+    @include breakpoint-mobile(medium) {
+      align-items: center;
+      padding-top: rem(50);
+    }
+  }
+}
+
+.copy {
+  font-size: rem(12);
+  text-transform: capitalize;
+  color: $dark-gray-1;
+
+  @include breakpoint-mobile(medium) {
+    color: $white;
+  }
+}
+
+.policy {
+  @include flex;
+  gap: rem(10);
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: rem(10);
+      font-weight: $medium;
+      color: $dark-gray-2;
+
+      @include breakpoint-mobile(medium) {
+        color: $soft-yellow;
+      }
+    }
+  }
+}

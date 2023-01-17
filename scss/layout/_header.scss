@@ -1,0 +1,44 @@
+@use '../utils/' as *;
+.header {
+  background-image: linear-gradient(to right, $secondary, $tertiary);
+  padding: rem(70) 0 rem(170);
+  @include flex-center;
+  position: relative;
+
+  @include breakpoint-mobile(medium) {
+    background-image: none;
+    max-width: rem(1300);
+    margin-inline: auto;
+    justify-content: start;
+  }
+
+  &::after {
+    content: '';
+    height: rem(114);
+    background-color: $light-grayish-orange-2;
+    position: absolute;
+    bottom: rem(-2);
+    left: 0;
+    width: 100%;
+    border-radius: 60% 60% 0 0;
+
+    @include breakpoint-mobile(medium) {
+      display: none;
+    }
+  }
+
+  &__logo-box {
+    @include flex-center;
+    gap: rem(16);
+  }
+
+  &__logo-text {
+    font-size: rem(32);
+    font-weight: $semi-bold;
+    color: $white;
+
+    @include breakpoint-mobile(medium) {
+      color: $primary;
+    }
+  }
+}

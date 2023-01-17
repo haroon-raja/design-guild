@@ -1,0 +1,20 @@
+@use '../utils' as *;
+
+body {
+  font-family: $font-primary;
+  font-weight: $regular;
+  line-height: 1;
+  color: $primary;
+  background-color: $light-grayish-orange-2;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 rem(3) $primary;
+}
+
+.heading-primary {
+  font-size: rem(24);
+  font-weight: bold;
+  line-height: rem(31.2);
+}

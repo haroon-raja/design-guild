@@ -1,0 +1,27 @@
+@use 'functions' as *;
+// COLORS
+$primary: hsl(26, 30%, 18%);
+$secondary: hsl(274, 81%, 58%);
+$tertiary: hsl(0, 95%, 69%);
+
+$slightly-orange: hsl(26, 30%, 65%);
+$light-grayish-orange-1: hsl(28, 32%, 92%);
+$light-grayish-orange-2: hsl(20, 30%, 96%);
+$light-grayish-orange-3: hsl(27, 31%, 82%);
+$soft-yellow: hsl(62, 97%, 71%);
+$white: hsl(0, 0%, 100%);
+$dark-gray-1: hsl(0, 0%, 40%);
+$dark-gray-2: hsl(0, 0%, 42%);
+
+// FONTS
+$font-primary: 'Inter', sans-serif;
+$font-display-1: 'Sora', sans-serif;
+$font-display-2: 'DM Sans', sans-serif;
+$font-display-3: 'Poppins', sans-serif;
+
+// FONT WEIGHTS
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;

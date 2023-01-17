@@ -1,0 +1,41 @@
+@use '../utils/' as *;
+.signup {
+  @include breakpoint-mobile(medium) {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: rem(90);
+    justify-content: start;
+  }
+
+  &__join {
+    @include breakpoint-mobile(medium) {
+      justify-self: center;
+    }
+
+    & h1 {
+      padding-right: rem(80);
+
+      @include breakpoint-desktop(small) {
+        padding-right: rem(50);
+      }
+    }
+  }
+
+  &__text {
+    font-size: rem(14);
+    font-weight: $light;
+    font-family: $font-display-1;
+    line-height: rem(14);
+    margin-top: rem(16);
+  }
+
+  &__link {
+    margin-top: rem(48);
+
+    @include breakpoint-mobile(medium) {
+      display: inline-block;
+      padding-inline: rem(80);
+    }
+  }
+}

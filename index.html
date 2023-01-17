@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;600;700&family=Poppins:wght@500&family=Sora:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Design guild</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="./" class="header__logo-box">
+          <picture>
+            <source media="(min-width: 50em)" srcset="images/logo.svg" />
+            <source srcset="images/logo-white.svg" />
+            <img
+              src="images/logo-white.svg"
+              alt="Design guild Logo"
+              class="header__logo"
+              width="48"
+              height="48"
+            />
+          </picture>
+          <span class="header__logo-text">Design Guild</span>
+        </a>
+      </header>
+      <div class="signup container">
+        <div class="recent__logins">
+          <p class="recent__logins-welcome mb-24">Welcome to Design Guild</p>
+          <p class="recent__logins-text mb-40">
+            Join the world's largest community for designers
+          </p>
+          <p class="recent__logins-recent mb-24">Recent Logins</p>
+          <div class="recent__logins-cards">
+            <figure
+              class="recent__logins-cards--card recent__logins-cards--card-1"
+            >
+              <a href="#" class="recent__logins-cards-link">
+                <img
+                  src="images/aliana-hepburn.png"
+                  alt="Aliana Hepburn"
+                  width="80"
+                  height="80"
+                  class="recent__logins-cards-img"
+                />
+                <figcaption class="recent__logins-cards-names">
+                  Aliana Hepburn
+                </figcaption>
+              </a>
+            </figure>
+            <figure
+              class="recent__logins-cards--card recent__logins-cards--card-2"
+            >
+              <a href="#" class="recent__logins-cards-link">
+                <img
+                  src="images/andrew-pochink.png"
+                  alt="Andrew Pochink"
+                  width="80"
+                  height="80"
+                  class="recent__logins-cards-img"
+                />
+                <figcaption class="recent__logins-cards-names">
+                  Andrew Pochink
+                </figcaption>
+              </a>
+            </figure>
+            <figure
+              class="recent__logins-cards--card recent__logins-cards--card-3"
+            >
+              <a href="#" class="recent__logins-cards-link">
+                <div class="recent__logins-cards-icon-bg">
+                  <img
+                    src="images/plus-icon.svg"
+                    alt="Add account"
+                    width="20"
+                    height="20"
+                    class="recent__logins-cards-icon"
+                  />
+                </div>
+                <figcaption class="recent__logins-cards-names">
+                  Add Account
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="signup__join">
+          <h1 class="heading-primary">Join our community today</h1>
+          <p class="signup__text">
+            Get connected, find designers to start a project
+          </p>
+          <a href="#" class="signup__link btn">Signup</a>
+        </div>
+      </div>
+      <div class="login container">
+        <form action="#" class="form">
+          <div class="form__group-input">
+            <label for="phone" class="form__label form__label--phone"
+              >Phone</label
+            >
+            <input
+              type="number"
+              class="form__input form__input--phone"
+              id="phone"
+              placeholder="Phone number"
+              required
+            />
+          </div>
+
+          <div class="form__group-input">
+            <label for="password" class="form__label form__label--password">
+              Password
+            </label>
+            <input
+              type="password"
+              class="form__input form__input--password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <img
+              src="images/eye-off-icon.svg"
+              alt="Show Password"
+              width="24"
+              height="24"
+              class="form__input--password-icon"
+              role="button"
+            />
+            <div class="form__group-forgot-pass">
+              <a href="#" class="form__forgot-pass">Forgot password?</a>
+            </div>
+          </div>
+
+          <div class="form__group-btn">
+            <button type="submit" class="btn button">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="copy">&copy; 2022 All rights reserved. techOverflow</p>
+        <p class="policy">
+          <a href="#" class="policy__link">Privacy Policy</a>
+          <a href="#" class="policy__link">Terms & Conditions</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

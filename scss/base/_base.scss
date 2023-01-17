@@ -1,0 +1,36 @@
+@use '../utils' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: min(calc(100% - rem(48)), rem(1300));
+  margin-inline: auto;
+}
+
+.main {
+  @include breakpoint-mobile(medium) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: rem(150);
+  }
+}

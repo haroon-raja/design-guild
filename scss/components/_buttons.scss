@@ -1,0 +1,19 @@
+@use '../utils/' as *;
+
+.btn {
+  font-weight: $semi-bold;
+  color: $white;
+  display: block;
+  background-image: linear-gradient(to right, $secondary, $tertiary);
+  padding: rem(16);
+  text-align: center;
+  border-radius: rem(8);
+}
+
+.button {
+  border: none;
+  font-size: rem(16);
+  font-weight: $semi-bold;
+  width: 100%;
+  cursor: pointer;
+}
